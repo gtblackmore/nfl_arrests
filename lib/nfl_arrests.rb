@@ -1,6 +1,7 @@
-require "nfl_arrests/version"
+require_relative './nfl_arrests/version'
+require_relative './nfl_arrests/api'
+require_relative './nfl_arrests/cli'
+require_relative './nfl_arrests/player'
 
-module NflArrests
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require 'rest-client'
+require 'json'
