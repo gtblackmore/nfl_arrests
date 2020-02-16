@@ -38,7 +38,7 @@ class NflArrests::CLI
     player = Player.find_by_name(input)
     player.each do |p|
       puts "-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~"
-      puts "#{p.Name} was arrested during the #{p.Season} season. It has been #{p.DaysSince} since this arrest."
+      puts "#{p.Name} was arrested during the #{p.Season} season. It has been #{p.DaysSince} days since this arrest."
       puts "   Team: #{p.Team_preffered_name}"
       puts "   City: #{p.Team_city}"
       puts "   Position: #{p.Position_name}"
